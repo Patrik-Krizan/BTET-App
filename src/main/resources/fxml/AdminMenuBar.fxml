@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.btet.controller.AdminMenuBarController">
+   <menus>
+      <Menu mnemonicParsing="false" text="Profile">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#openHome" text="Home - AuditLog" />
+            <MenuItem mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+            <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Employee">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#openEmployeeSearch" text="Search &amp; Update" />
+            <MenuItem mnemonicParsing="false" onAction="#openAddEmployee" text="Add Employee" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Manager">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#openManagerSearch" text="Search &amp; Update" />
+            <MenuItem mnemonicParsing="false" onAction="#openAddManager" text="Add Manager" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Expense">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#openExpenseSearch" text="Expense Search &amp; Update" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Budget">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#openBudgetSearch" text="Search &amp; Update" />
+        </items>
+      </Menu>
+   </menus>
+</MenuBar>
